@@ -8,7 +8,7 @@ import { ThemedView } from '@/components/ThemedView';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#A1CEDC', dark: '#0' }}
       headerImage={
         <Image
           source={require('@/assets/images/amongus1.jpg')}
@@ -19,8 +19,14 @@ export default function HomeScreen() {
         <ThemedText type="title">Bem vindo a Mongus Gym!</ThemedText>
         <HelloWave />
       </ThemedView>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Bem vindo a Mongus Gym!</ThemedText>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="default">News - Acompanhe as noticias mais sus do momento.</ThemedText>
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="default">Units - Veja as unidades disponiveis mais perto de você.</ThemedText>
+      </ThemedView>
+      <ThemedView style={styles.stepContainer}>
+        <ThemedText type="default">Viodes - Veja os melhores videos e mova esse corpinho.</ThemedText>
       </ThemedView>
       
     </ParallaxScrollView>
@@ -36,6 +42,7 @@ const styles = StyleSheet.create({
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+    fontSize: 1,
   },
   mongusImage: {
     height: 240,
