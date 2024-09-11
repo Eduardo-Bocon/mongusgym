@@ -11,7 +11,11 @@ export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
+      headerImage={
+        <Image
+          source={require('@/assets/images/amongusIndex.jpeg')}
+          style={styles.mongusImage}
+        />}>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Noticias do momento</ThemedText>
       </ThemedView>
@@ -89,14 +93,21 @@ export default function TabTwoScreen() {
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    color: '#808080',
-    bottom: -90,
-    left: -35,
-    position: 'absolute',
-  },
   titleContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
     gap: 8,
+  },
+  stepContainer: {
+    gap: 8,
+    marginBottom: 8,
+    fontSize: 1,
+  },
+  mongusImage: {
+    height: 240,
+    width: 380,
+    bottom: 0,
+    left: 0,
+    position: 'absolute',
   },
 });
