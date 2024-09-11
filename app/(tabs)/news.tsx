@@ -11,10 +11,7 @@ export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={
-      <Image
-        source={require('@/assets/images/amongNews.jpg')}
-      />}>
+      headerImage={<Ionicons size={310} name="code-slash" style={styles.headerImage} />}>
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Noticias do momento</ThemedText>
       </ThemedView>
