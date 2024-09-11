@@ -11,7 +11,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#0' }}
       headerImage={
         <Image
-          source={require('@/assets/images/amongus1.jpg')}
+          source={require('@/assets/images/amongusIndex.jpg')}
           style={styles.mongusImage}
         />
       }>
