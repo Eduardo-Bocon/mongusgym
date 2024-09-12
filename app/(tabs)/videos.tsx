@@ -61,15 +61,18 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#FFFFFF',
+    backgroundColor: '#0',
+    margin: 30,
+    
   },
   video: {
     width: '100%',
     height: 300, 
   },
   image: {
-    width: 300,
-    height: 200,
+    width: 300*0.75,
+    height: 200*0.75,
     borderRadius: 10,
+    marginVertical: 10
   },
 });

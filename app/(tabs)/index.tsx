@@ -26,7 +26,7 @@ export default function HomeScreen() {
         <ThemedText type="default">Units - Veja as unidades disponiveis mais perto de você.</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="default">Viodes - Veja os melhores videos e mova esse corpinho.</ThemedText>
+        <ThemedText type="default">Videos - Veja os melhores videos e mova esse corpinho.</ThemedText>
       </ThemedView>
       
     </ParallaxScrollView>
