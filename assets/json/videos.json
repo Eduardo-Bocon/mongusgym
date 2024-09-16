@@ -1,27 +1,27 @@
 [
     {
       "id": 1,
-      "name": "Never Gonna Give You Up",
-      "channel": "Rick Astley",
-      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg",
-      "duration": "3:33"
+      "name": "18 min de TREINO CARDIO",
+      "channel": "Renan Gonçalves",
+      "url": "https://www.youtube.com/watch?v=UUJ55DR-jPk",
+      "thumbnail": "https://img.youtube.com/vi/UUJ55DR-jPk/0.jpg",
+      "duration": "18:15"
     },
     {
       "id": 2,
-      "name": "Perfect",
-      "channel": "Ed Sheeran",
-      "url": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
-      "thumbnail": "https://img.youtube.com/vi/2Vv-BfVoq4g/0.jpg",
-      "duration": "4:40"
+      "name": "Cardio para Iniciantes   ",
+      "channel": "CHASE BRASIL",
+      "url": "https://www.youtube.com/watch?v=i3-WS7YJ2O8",
+      "thumbnail": "https://img.youtube.com/vi/i3-WS7YJ2O8/0.jpg",
+      "duration": "29:36"
     },
     {
       "id": 3,
-      "name": "Shape of You",
-      "channel": "Ed Sheeran",
-      "url": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
-      "thumbnail": "https://img.youtube.com/vi/JGwWNGJdvx8/0.jpg",
-      "duration": "4:24"
+      "name": "Cardio Super Intenso de 15 min",
+      "channel": "CHASE BRASIL",
+      "url": "https://www.youtube.com/watch?v=D8nuuuUQUT0",
+      "thumbnail": "https://img.youtube.com/vi/D8nuuuUQUT0/0.jpg",
+      "duration": "15:01"
     }
   ]
   

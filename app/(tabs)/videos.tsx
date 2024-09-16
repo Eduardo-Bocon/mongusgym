@@ -33,8 +33,8 @@ export default function VideosScreen() {
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={<Image
-        source={require('@/assets/images/amongus_watching.png')}
-        style={styles.headerImage}/>}>
+        source={require('@/assets/images/VideosImage.jpg')}
+        style={styles.mainImage}/>}>
 
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Videos</ThemedText>
@@ -57,13 +57,7 @@ export default function VideosScreen() {
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    height: 240,
-    width: 380,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
-  },
+  
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
@@ -83,5 +77,12 @@ const styles = StyleSheet.create({
     height: 200*0.75,
     borderRadius: 10,
     marginVertical: 10
+  },
+  mainImage: {
+    height: 260,
+    width: 450,
+    bottom: 0,
+    left: 0,
+    position: 'absolute',
   },
 });
