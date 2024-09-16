@@ -23,7 +23,7 @@ export default function HomeScreen() {
         <ThemedText type="default">News - Acompanhe as noticias mais sus do momento.</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="default">Units - Veja as unidades disponiveis mais perto de você.</ThemedText>
+        <ThemedText type="default">Unidades - Veja as unidades disponiveis mais perto de você.</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="default">Videos - Veja os melhores videos e mova esse corpinho.</ThemedText>
