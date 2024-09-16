@@ -1,20 +1,29 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet, Image, Platform, View, TouchableOpacity, Linking, ScrollView } from 'react-native';
-
-import Video, {VideoRef} from 'react-native-video';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import { useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 export default function VideosScreen() {
 
-  const videos = [
-    { id: 1, url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ', thumbnail: 'https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg' },
-    { id: 2, url: 'https://www.youtube.com/watch?v=2Vv-BfVoq4g', thumbnail: 'https://img.youtube.com/vi/2Vv-BfVoq4g/0.jpg' },
-    { id: 3, url: 'https://www.youtube.com/watch?v=3JZ_D3ELwOQ', thumbnail: 'https://img.youtube.com/vi/3JZ_D3ELwOQ/0.jpg' },
-    { id: 4, url: 'https://www.youtube.com/watch?v=V-_O7nl0Ii0', thumbnail: 'https://img.youtube.com/vi/V-_O7nl0Ii0/0.jpg' },
-  ];
+  type Video = {
+    id: number;
+    name: string;
+    channel: string;
+    url: string;
+    thumbnail: string;
+    duration: string;
+  };
+
+  const [videos, setVideos] = useState<Video[]>([]);
+
+  useEffect(() => {
+    fetch('assets/json/videos.json') 
+      .then(response => response.json())
+      .then(data => setVideos(data))
+      .catch(error => console.error('Error fetching videos:', error));
+  }, []);
 
   const openYouTubeVideo = (url:string) => {
     Linking.openURL(url).catch(err => console.error('An error occurred', err));
@@ -32,15 +41,15 @@ export default function VideosScreen() {
       </ThemedView>
 
       <ScrollView style={styles.container}>
-      {videos.map((video) => (
-        <TouchableOpacity key={video.id} onPress={() => openYouTubeVideo(video.url)}>
-          <Image
-            source={{ uri: video.thumbnail }}
-            style={styles.image}
-          />
-        </TouchableOpacity>
-      ))}
-    </ScrollView>
+        {videos.map((video) => (
+          <TouchableOpacity key={video.id} onPress={() => openYouTubeVideo(video.url)}>
+            <Image source={{ uri: video.thumbnail }} style={styles.image} />
+            <ThemedText>{video.name}</ThemedText>
+            <ThemedText>{video.channel}</ThemedText>
+            <ThemedText>{video.duration}</ThemedText>
+          </TouchableOpacity>
+        ))}
+      </ScrollView>
       
     </ParallaxScrollView>
 

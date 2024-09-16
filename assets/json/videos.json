@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Never Gonna Give You Up",
+      "channel": "Rick Astley",
+      "url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "thumbnail": "https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg",
+      "duration": "3:33"
+    },
+    {
+      "id": 2,
+      "name": "Perfect",
+      "channel": "Ed Sheeran",
+      "url": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
+      "thumbnail": "https://img.youtube.com/vi/2Vv-BfVoq4g/0.jpg",
+      "duration": "4:40"
+    },
+    {
+      "id": 3,
+      "name": "Shape of You",
+      "channel": "Ed Sheeran",
+      "url": "https://www.youtube.com/watch?v=JGwWNGJdvx8",
+      "thumbnail": "https://img.youtube.com/vi/JGwWNGJdvx8/0.jpg",
+      "duration": "4:24"
+    }
+  ]
+  
