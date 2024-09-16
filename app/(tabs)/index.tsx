@@ -16,11 +16,11 @@ export default function HomeScreen() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Bem vindo a Mongus Gym!</ThemedText>
+        <ThemedText type="title">Bem vindo a academia "The King"!</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="default">News - Acompanhe as noticias mais sus do momento.</ThemedText>
+        <ThemedText type="default">News - Acompanhe as noticias mais fortes do momento.</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="default">Unidades - Veja as unidades disponiveis mais perto de você.</ThemedText>

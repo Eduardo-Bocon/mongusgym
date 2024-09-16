@@ -13,8 +13,8 @@ export default function NewsScreen() {
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
       headerImage={
         <Image
-          source={require('@/assets/images/amongNews.jpeg')}
-          style={styles.mongusImage}
+          source={require('@/assets/images/NewsImage.jpg')}
+          style={styles.mainImage}
         />}
     >
       <ThemedView style={styles.titleContainer}>
@@ -45,9 +45,9 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
   },
-  mongusImage: {
-    height: 240,
-    width: 380,
+  mainImage: {
+    height: 260,
+    width: 450,
     bottom: 0,
     left: 0,
     position: 'absolute',
