@@ -16,13 +16,14 @@ export default function VideosScreen() {
     duration: string;
   };
 
+  
+  const videoData = require('@/assets/json/videos.json') as Video[];  
+
   const [videos, setVideos] = useState<Video[]>([]);
 
+
   useEffect(() => {
-    fetch('assets/json/videos.json') 
-      .then(response => response.json())
-      .then(data => setVideos(data))
-      .catch(error => console.error('Error fetching videos:', error));
+    setVideos(videoData);
   }, []);
 
   const openYouTubeVideo = (url:string) => {
