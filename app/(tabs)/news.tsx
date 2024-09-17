@@ -59,12 +59,14 @@ const styles = StyleSheet.create({
     borderBottomColor: '#ccc',
   },
   texto: {
-    fontSize: 16,
     fontWeight: 'bold',
+    fontSize: 12,
     marginVertical: 5,
+    color: 'white',
   },
   info: {
-    fontSize: 12,
+    fontWeight: 'bold',
+    fontSize: 10,
     color: 'gray',
   },
 });
