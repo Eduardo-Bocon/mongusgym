@@ -7,7 +7,7 @@ import { ThemedView } from '@/components/ThemedView';
 import noticiasData from '@/assets/json/noticas.json'; // Importando o JSON
 import { Collapsible } from '@/components/Collapsible';
 
-export default function TabTwoScreen() {
+export default function NewsScreen() {
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}

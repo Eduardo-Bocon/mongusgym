@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "18 min de TREINO CARDIO",
+      "channel": "Renan Gonçalves",
+      "url": "https://www.youtube.com/watch?v=UUJ55DR-jPk",
+      "thumbnail": "https://img.youtube.com/vi/UUJ55DR-jPk/0.jpg",
+      "duration": "18:15"
+    },
+    {
+      "id": 2,
+      "name": "Cardio para Iniciantes   ",
+      "channel": "CHASE BRASIL",
+      "url": "https://www.youtube.com/watch?v=i3-WS7YJ2O8",
+      "thumbnail": "https://img.youtube.com/vi/i3-WS7YJ2O8/0.jpg",
+      "duration": "29:36"
+    },
+    {
+      "id": 3,
+      "name": "Cardio Super Intenso de 15 min",
+      "channel": "CHASE BRASIL",
+      "url": "https://www.youtube.com/watch?v=D8nuuuUQUT0",
+      "thumbnail": "https://img.youtube.com/vi/D8nuuuUQUT0/0.jpg",
+      "duration": "15:01"
+    }
+  ]
+  

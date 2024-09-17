@@ -35,7 +35,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="units"
         options={{
-          title: 'Units',
+          title: 'Unidades',
           tabBarIcon: ({ color, focused }) => (
             <TabBarIcon name={focused ? 'business' : 'business-outline'} color={color} />
           ),

@@ -11,8 +11,8 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#0' }}
       headerImage={
         <Image
-          source={require('@/assets/images/amongusIndex.jpg')}
-          style={styles.mongusImage}
+          source={require('@/assets/images/HomeImage.jpg')}
+          style={styles.Image}
         />
       }>
       <ThemedView style={styles.titleContainer}>
@@ -23,7 +23,7 @@ export default function HomeScreen() {
         <ThemedText type="default">News - Acompanhe as noticias mais sus do momento.</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="default">Units - Veja as unidades disponiveis mais perto de você.</ThemedText>
+        <ThemedText type="default">Unidades - Veja as unidades disponiveis mais perto de você.</ThemedText>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="default">Videos - Veja os melhores videos e mova esse corpinho.</ThemedText>
@@ -44,9 +44,9 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     fontSize: 1,
   },
-  mongusImage: {
-    height: 240,
-    width: 380,
+  Image: {
+    height: 260,
+    width: 450,
     bottom: 0,
     left: 0,
     position: 'absolute',
