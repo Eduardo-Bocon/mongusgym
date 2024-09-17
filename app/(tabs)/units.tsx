@@ -1,72 +1,127 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
-import { StyleSheet, Image, Platform, TouchableOpacity } from 'react-native';
-
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'expo-router';
+import { StyleSheet, Image, View, TouchableOpacity, FlatList, Text } from 'react-native';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
 
-interface Gym{
-  id: number;
+type Unit = {
   name: string;
   location: string;
-  image: string;
-}
+  image: string; // Assuming each unit has an associated image
+};
 
-export default function UnitsScreen() {
+const Units = () => {
+  const router = useRouter();
+  const [units, setUnits] = useState<Unit[]>([]); // State to hold unit data
+
+  // Fetch units from the JSON file
+  useEffect(() => {
+    const fetchUnits = async () => {
+      try {
+        const data = require('@/assets/json/units.json') as Unit[];
+        setUnits(data);
+      } catch (error) {
+        console.error('Failed to load units:', error);
+      }
+    };
+    
+    fetchUnits();
+  }, []);
+
+  // Handle press to navigate to the UnitDetails screen
+  const handlePress = (name: string) => {
+    router.push({
+      pathname: "/(tabs)/unitDescription",
+      params: { name }, // Pass the name as a parameter
+    });
+  };
+
+  // Render each unit as a card
+  const renderUnit = ({ item }: { item: Unit }) => (
+    <TouchableOpacity key={item.name} style={styles.card} onPress={() => handlePress(item.name)} activeOpacity={0.8}>
+      <Image source={{ uri: item.image }} style={styles.cardImage} />
+      <View style={styles.cardContent}>
+        <ThemedText type="title" style={styles.unitName}>{item.name}</ThemedText>
+        <ThemedText type="default" style={styles.unitLocation}>{item.location}</ThemedText>
+      </View>
+    </TouchableOpacity>
+  );
+
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/gymunits.jpg')}
-          style={styles.mainImage}
-        />}>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Nossa unidades</ThemedText>
-      </ThemedView>
-      <ScrollView style={styles.container}>
-        {videos.map((video) => (
-          <TouchableOpacity key={video.id} onPress={() => openYouTubeVideo(video.url)}>
-            <Image source={{ uri: video.thumbnail }} style={styles.image} />
-            <ThemedText>{video.name}</ThemedText>
-            <ThemedText>{video.channel}</ThemedText>
-            <ThemedText>{video.duration}</ThemedText>
-          </TouchableOpacity>
-        ))}
-      </ScrollView>
+      headerBackgroundColor={{ light: '#000000', dark: '#000000' }}
+      headerImage={<Image source={require('@/assets/images/UnitsImage.jpg')} style={styles.mainImage} />}
+    >
+      <View style={styles.container}>
+        <ThemedText type="title" style={styles.pageTitle}>Nossas Unidades</ThemedText>
+        {units.length > 0 ? (
+          <FlatList
+            data={units}
+            renderItem={renderUnit}
+            keyExtractor={(item) => item.name} // Use the name as the key
+            contentContainerStyle={styles.listContent}
+          />
+        ) : (
+          <Text style={styles.noUnitsText}>No units available.</Text>
+        )}
+      </View>
     </ParallaxScrollView>
   );
-}
+};
+
+export default Units;
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    gap: 8,
-  },
   container: {
     flex: 1,
-    backgroundColor: '#0',
-    margin: 30,
-    
-  },
-  video: {
-    width: '100%',
-    height: 300, 
-  },
-  image: {
-    width: 300*0.75,
-    height: 200*0.75,
-    borderRadius: 10,
-    marginVertical: 10
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: '#1C1C1E', // Dark background for the screen
   },
   mainImage: {
     height: 260,
-    width: 450,
-    bottom: 0,
-    left: 0,
-    position: 'absolute',
+    width: '100%',
+  },
+  pageTitle: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    marginBottom: 20,
+    textAlign: 'center',
+    color: '#FFF',
+  },
+  listContent: {
+    paddingBottom: 20,
+  },
+  card: {
+    backgroundColor: '#2C2C2E',
+    borderRadius: 15,
+    overflow: 'hidden', // Makes sure image stays within card bounds
+    marginBottom: 20,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 8,
+  },
+  cardImage: {
+    width: '100%',
+    height: 150,
+  },
+  cardContent: {
+    padding: 15,
+  },
+  unitName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    color: '#FFF',
+    marginBottom: 4,
+  },
+  unitLocation: {
+    fontSize: 14,
+    color: '#A9A9A9',
+  },
+  noUnitsText: {
+    color: '#FFF',
+    textAlign: 'center',
   },
 });
-

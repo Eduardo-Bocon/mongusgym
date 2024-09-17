@@ -1,0 +1,57 @@
+[{
+    "name": "Academia Rocha",
+    "images": ["https://scontent-ams2-1.xx.fbcdn.net/v/t31.18172-8/15585037_10211984555794302_5346861922181966244_o.jpg?_nc_cat=106&ccb=1-7&_nc_sid=13d280&_nc_ohc=okSUYi8SPFMQ7kNvgF7yV62&_nc_ht=scontent-ams2-1.xx&_nc_gid=A2Uuj_GvXaFUBKwXgdOa4Sf&oh=00_AYAdABUjkAccdDb9DtyhBhw2yqC-r86I1HqsBh_QrKzfHw&oe=671151B6", "https://lh5.googleusercontent.com/p/AF1QipO-lNESnr6RKyakSHb-YoF8DESPYqzv49tQckfQ=w408-h544-k-no"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXEhPy-jkKk9VL3kHh0KaC7AWPg_9TX5u46A&s",
+    "address": "R. Esteves Júnior, 749 - Centro, Florianópolis - SC, 88015-130, Brasil",
+    "coordinates": { "lat": -27.587869213838715, "lng": -48.55370009520349 },
+    "hours": "Seg - Sex: 6h às 22h, Sáb: 8h às 18h",
+    "price": "R$ 160,00 / mês",
+    "phone": "554832233895",
+    "whatsapp": "5548988080852"
+  },
+  {
+    "name": "Academia UNITYFIT",
+    "images": ["https://storage.builderall.com//franquias/2/25874/editor-html/10318028.jpg", "https://lh5.googleusercontent.com/p/AF1QipMwV9tJeuHxuboukSekwFGD9Bnab_mblQ8bc2Ao=w408-h241-k-no"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReGrL9i5DD3xYRTFRcdP0pYxJdEbRWXdpZSQ&s",
+    "address": "R. Ten. Silveira, 199 - 10º andar - Centro, Florianópolis - SC, 88010-300, Brasil",
+    "coordinates": { "lat": -27.595501845861527, "lng": -48.551454121244305 }, 
+    "hours": "Seg - Sex: 6h às 22h, Sáb: 8h às 18h",
+    "price": "R$ 180,00 / mês",
+    "phone": "48 3304-8223",
+    "whatsapp": "554833048223"
+  },
+  {
+    "name": "Academia Pratique Fitness",
+    "images": ["https://lh5.googleusercontent.com/p/AF1QipPe3jIcqi1ns83iJH00JdUxzFn_V2jKQ1Fouc2k=w408-h408-k-no", "https://pratiquefitness.com.br/wp-content/uploads/2023/07/Pratique-Equipe-300x200.webp"],
+    "image": "https://lh5.googleusercontent.com/p/AF1QipPe3jIcqi1ns83iJH00JdUxzFn_V2jKQ1Fouc2k=w408-h408-k-no",
+    "address": "R. Francisco Tolentino, 800 - Centro, Florianópolis - SC, 88010-200, Brasil",
+    "coordinates": { "lat": -27.594739173125188, "lng": -48.55739968523884  }, 
+    "hours": "Seg - Sex: 6h às 22h, Sáb: 8h às 18h",
+    "price": "R$ 150,00 / mês",
+    "phone": "553141411962",
+    "whatsapp": "554833048223"
+  },
+  {
+    "name": "Academia EVO",
+    "images": ["https://lh5.googleusercontent.com/p/AF1QipMAhpDzjoUnHSMYMre8NzgbGXVNrNV7Qeun-coU=w408-h306-k-no", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ifVvlUY9WH7kKYFUokqi590pllqBv9_VYA&s"],
+    "image": "https://lh5.googleusercontent.com/p/AF1QipMAhpDzjoUnHSMYMre8NzgbGXVNrNV7Qeun-coU=w408-h306-k-no",
+    "address": "R. Dom Jaime Câmara, 206 - Centro, Florianópolis - SC, 88015-120, Brasil",
+    "coordinates": { "lat": -27.594739173125188, "lng": -48.55739968523884  }, 
+    "hours": "Seg - Sex: 6h às 22h, Sáb: 8h às 18h",
+    "price": "R$ 140,00 / mês",
+    "phone": "5548988690851",
+    "whatsapp": "554833048223"
+  },
+  {
+    "name": "Run Fitness Club",
+    "images": ["https://lh5.googleusercontent.com/p/AF1QipN1ygPnly6trd-qod4AmgsFa7F-YR2eMRxhFJaE=w427-h240-k-no", "https://academiabefit.com.br/wp-content/uploads/2022/06/7-dicas-para-ter-melhores-resultados-na-academia-scaled.jpg"],
+    "image": "https://lh5.googleusercontent.com/p/AF1QipN1ygPnly6trd-qod4AmgsFa7F-YR2eMRxhFJaE=w427-h240-k-no",
+    "address": "R. Cônego Bernardo, 57 - Trindade, Florianópolis - SC, 88036-570, Brasil",
+    "coordinates": { "lat": -27.59509280271396, "lng": -48.520453351976116 }, 
+    "hours": "Seg - Sex: 6h às 22h",
+    "price": "R$ 130,00 / mês",
+    "phone": "5548988176491",
+    "whatsapp": "554833048223"
+  }
+
+]
