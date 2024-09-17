@@ -4,104 +4,41 @@
         "texto": "Nossa nova unidade já está aberta! Venha conhecer o espaço moderno e equipado para todos os seus treinos. Não perca as promoções de inauguração e aproveite para se inscrever nas nossas aulas especiais.",
         "usuario": "academia_central",
         "data": "2024-09-01",
-        "link": "https://www.academia.com/central-inauguracao"
+        "link": "https://www.instagram.com/p/C__oU1YP79P/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         "titulo": "Aula de Corrida Aberta ao Público no Próximo Sábado",
         "texto": "Participe da nossa aula de corrida ao ar livre! Aberta ao público, essa atividade é ideal para quem quer começar a correr ou melhorar seu desempenho. Traga seus amigos e venha se divertir conosco.",
         "usuario": "academia_eventos",
         "data": "2024-09-02",
-        "link": "https://www.academia.com/corrida-sabado"
+        "link": "https://www.instagram.com/p/C__odn8vNyO/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         "titulo": "Benefícios do Whey Protein para sua Saúde",
         "texto": "Descubra como o Whey Protein pode melhorar seu desempenho nos treinos e auxiliar na recuperação muscular. Conheça as melhores formas de incluir essa proteína na sua dieta e os mitos que envolvem seu uso.",
         "usuario": "nutricionista_01",
         "data": "2024-09-03",
-        "link": "https://www.blogsaude.com/whey-beneficios"
+        "link": "https://www.instagram.com/p/C__of-YP784/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         "titulo": "Alimentação Saudável: Dicas para uma Vida Equilibrada",
         "texto": "Uma alimentação equilibrada é essencial para quem quer manter a saúde em dia e alcançar bons resultados nos treinos. Veja nossas dicas de refeições práticas e nutritivas para incluir no seu dia a dia.",
         "usuario": "nutricionista_02",
         "data": "2024-09-04",
-        "link": "https://www.blogsaude.com/alimentacao-saudavel"
+        "link": "https://www.instagram.com/p/C__oixkvEMJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         "titulo": "Aula Aberta de Yoga: Equilíbrio para Corpo e Mente",
         "texto": "Junte-se a nós para uma aula de yoga aberta ao público. Venha relaxar, melhorar sua flexibilidade e fortalecer o corpo e a mente em um ambiente tranquilo e acolhedor.",
         "usuario": "academia_zen",
         "data": "2024-09-05",
-        "link": "https://www.academia.com/aula-aberta-yoga"
+        "link": "https://www.instagram.com/p/C__ol1dPM3m/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     },
     {
         "titulo": "Como o Treino Funcional Pode Ajudar sua Saúde",
         "texto": "O treino funcional é uma excelente opção para quem busca melhorar a força, flexibilidade e coordenação. Conheça os benefícios desse tipo de exercício e veja como ele pode transformar seu corpo.",
         "usuario": "personal_treinador_01",
         "data": "2024-09-06",
-        "link": "https://www.blogsaude.com/treino-funcional-beneficios"
-    },
-    {
-        "titulo": "Maratona Solidária: Corra por uma Boa Causa",
-        "texto": "Participe da nossa maratona solidária e ajude a arrecadar fundos para instituições de caridade. Além de cuidar da sua saúde, você estará contribuindo para uma causa nobre. Inscreva-se agora!",
-        "usuario": "academia_eventos",
-        "data": "2024-09-07",
-        "link": "https://www.academia.com/maratona-solidaria"
-    },
-    {
-        "titulo": "Como o Alongamento Diário Melhora sua Qualidade de Vida",
-        "texto": "O alongamento regular pode prevenir lesões, aliviar tensões e melhorar sua postura. Veja como inserir essa prática na sua rotina diária para aproveitar seus benefícios ao máximo.",
-        "usuario": "personal_treinador_02",
-        "data": "2024-09-08",
-        "link": "https://www.blogsaude.com/beneficios-alongamento"
-    },
-    {
-        "titulo": "Nova Aula de Crossfit Disponível a Partir de Outubro",
-        "texto": "Nossa nova turma de crossfit começa no próximo mês! Não perca essa oportunidade de se inscrever e experimentar um dos treinos mais desafiadores e completos. Vagas limitadas!",
-        "usuario": "academia_crossfit",
-        "data": "2024-09-09",
-        "link": "https://www.academia.com/nova-turma-crossfit"
-    },
-    {
-        "titulo": "Os Segredos para Manter uma Boa Postura no Trabalho",
-        "texto": "Manter uma boa postura no trabalho é essencial para evitar dores e desconfortos. Veja nossas dicas para ajustar sua estação de trabalho e os exercícios que você pode fazer para aliviar a tensão muscular.",
-        "usuario": "fisioterapeuta_01",
-        "data": "2024-09-10",
-        "link": "https://www.blogsaude.com/postura-no-trabalho"
-    },
-    {
-        "titulo": "Dicas de Nutrição para Aumentar sua Energia nos Treinos",
-        "texto": "Saiba como adaptar sua alimentação para ter mais energia durante os treinos. Descubra os alimentos ideais para garantir uma performance excelente e uma recuperação mais rápida.",
-        "usuario": "nutricionista_03",
-        "data": "2024-09-11",
-        "link": "https://www.blogsaude.com/nutricao-energia"
-    },
-    {
-        "titulo": "Treino HIIT: Queime Gordura em Menos Tempo",
-        "texto": "Conheça os benefícios do treino HIIT (Treinamento Intervalado de Alta Intensidade) para queimar gordura e melhorar seu condicionamento físico em sessões rápidas e eficazes.",
-        "usuario": "personal_treinador_03",
-        "data": "2024-09-12",
-        "link": "https://www.academia.com/treino-hiit-beneficios"
-    },
-    {
-        "titulo": "Vantagens da Meditação para sua Saúde Mental",
-        "texto": "Além de fortalecer o corpo, cuidar da mente também é fundamental. Descubra como a meditação pode ajudar a reduzir o estresse, melhorar o foco e trazer mais equilíbrio para o seu dia a dia.",
-        "usuario": "academia_zen",
-        "data": "2024-09-13",
-        "link": "https://www.blogsaude.com/meditacao-beneficios"
-    },
-    {
-        "titulo": "Corrida de Rua: Inscreva-se na Prova Anual da Academia",
-        "texto": "Já estão abertas as inscrições para a corrida de rua anual da nossa academia. Participe desse grande evento, melhore seu condicionamento e concorra a prêmios incríveis!",
-        "usuario": "academia_eventos",
-        "data": "2024-09-14",
-        "link": "https://www.academia.com/corrida-anual-inscricao"
-    },
-    {
-        "titulo": "Como Cuidar do Seu Corpo Durante o Período de Recuperação",
-        "texto": "O descanso é tão importante quanto o treino. Veja as melhores práticas para cuidar do seu corpo durante o período de recuperação e evitar lesões.",
-        "usuario": "fisioterapeuta_02",
-        "data": "2024-09-15",
-        "link": "https://www.blogsaude.com/recuperacao-corporal"
+        "link": "https://www.instagram.com/p/C__oowVvVJF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
     }
 ]
