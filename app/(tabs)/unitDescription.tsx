@@ -46,7 +46,6 @@ export default function UnitDetailsScreen() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.unitName}>{unit.name}</Text>
       
-      {/* Images */}
       <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.imagesContainer}>
         {unit.images.map((image, index) => (
           <Image key={index} source={{ uri: image }} style={styles.image} />
@@ -96,13 +95,13 @@ export default function UnitDetailsScreen() {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#1C1C1E', // Dark background
+    backgroundColor: '#1C1C1E',
   },
   unitName: {
     fontSize: 28,
     fontWeight: 'bold',
     marginBottom: 20,
-    color: '#FFF', // Light color for text on dark background
+    color: '#FFF',
     textAlign: 'center',
   },
   imagesContainer: {
@@ -115,7 +114,7 @@ const styles = StyleSheet.create({
     height: 150,
     marginRight: 10,
     borderRadius: 10,
-    backgroundColor: '#333', // Darker background for images
+    backgroundColor: '#333', 
   },
   infoContainer: {
     flexDirection: 'row',
@@ -127,10 +126,10 @@ const styles = StyleSheet.create({
     flex: 1,
     fontSize: 16,
     marginLeft: 10,
-    color: '#FFF', // Light color for text
+    color: '#FFF', 
   },
   noUnitText: {
-    color: '#FFF', // Light color for fallback text
+    color: '#FFF', 
     fontSize: 16,
     textAlign: 'center',
     backgroundColor: "#1C1C1E",
@@ -139,18 +138,18 @@ const styles = StyleSheet.create({
   iconButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#007BFF', // Blue background for action buttons
+    backgroundColor: '#007BFF', 
     padding: 10,
     borderRadius: 8,
     marginLeft: 10,
   },
   iconButtonText: {
     marginLeft: 5,
-    color: '#FFF', // Light text on buttons
+    color: '#FFF',
     fontSize: 14,
   },
   whatsappButton: {
-    backgroundColor: '#25D366', // WhatsApp green for WhatsApp button
+    backgroundColor: '#25D366', 
   },
   background:{
     backgroundColor: "#1C1C1E"

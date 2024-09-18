@@ -1,23 +1,20 @@
-import Ionicons from '@expo/vector-icons/Ionicons';
 import { StyleSheet, Image, Text, View, TouchableOpacity, Linking } from 'react-native';
-import { ExternalLink } from '@/components/ExternalLink';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
-import noticiasData from '@/assets/json/noticas.json'; // Importando o JSON
+import noticiasData from '@/assets/json/noticas.json';
 import { Collapsible } from '@/components/Collapsible';
 
-// Defina o tipo para as notícias
+
 interface Noticia {
   titulo: string;
   texto: string;
   usuario: string;
   data: string;
-  link: string; // Certifique-se de que o link é uma string
+  link: string; 
 }
 
 export default function NewsScreen() {
-  // Função para abrir o link
   const handlePress = (url: string) => {
     Linking.openURL(url);
   };
@@ -45,10 +42,9 @@ export default function NewsScreen() {
             </Text>
             <Text style={styles.info}>{noticia.data}</Text>
             
-            {/* Adicionando o botão abaixo do texto da notícia */}
             <TouchableOpacity 
               style={styles.button} 
-              onPress={() => handlePress(noticia.link)} // Corrigindo a função onPress
+              onPress={() => handlePress(noticia.link)} 
             >
               <Text style={styles.buttonText}>Ver Feed</Text>
             </TouchableOpacity>
@@ -89,7 +85,6 @@ const styles = StyleSheet.create({
     fontSize: 10,
     color: 'gray',
   },
-  // Estilos do botão
   button: {
     backgroundColor: '#007BFF',
     padding: 10,

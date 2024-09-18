@@ -7,14 +7,13 @@ import { ThemedText } from '@/components/ThemedText';
 type Unit = {
   name: string;
   location: string;
-  image: string; // Assuming each unit has an associated image
+  image: string;
 };
 
 const Units = () => {
   const router = useRouter();
-  const [units, setUnits] = useState<Unit[]>([]); // State to hold unit data
+  const [units, setUnits] = useState<Unit[]>([]);
 
-  // Fetch units from the JSON file
   useEffect(() => {
     const fetchUnits = async () => {
       try {
@@ -28,15 +27,13 @@ const Units = () => {
     fetchUnits();
   }, []);
 
-  // Handle press to navigate to the UnitDetails screen
   const handlePress = (name: string) => {
     router.push({
       pathname: "/(tabs)/unitDescription",
-      params: { name }, // Pass the name as a parameter
+      params: { name }, 
     });
   };
 
-  // Render each unit as a card
   const renderUnit = ({ item }: { item: Unit }) => (
     <TouchableOpacity key={item.name} style={styles.card} onPress={() => handlePress(item.name)} activeOpacity={0.8}>
       <Image source={{ uri: item.image }} style={styles.cardImage} />
@@ -58,7 +55,7 @@ const Units = () => {
           <FlatList
             data={units}
             renderItem={renderUnit}
-            keyExtractor={(item) => item.name} // Use the name as the key
+            keyExtractor={(item) => item.name} 
             contentContainerStyle={styles.listContent}
           />
         ) : (
@@ -76,7 +73,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 20,
     paddingVertical: 10,
-    backgroundColor: '#1C1C1E', // Dark background for the screen
+    backgroundColor: '#1C1C1E', 
   },
   mainImage: {
     height: 260,
@@ -95,7 +92,7 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#2C2C2E',
     borderRadius: 15,
-    overflow: 'hidden', // Makes sure image stays within card bounds
+    overflow: 'hidden', 
     marginBottom: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 4 },
